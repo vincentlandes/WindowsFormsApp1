@@ -29,11 +29,19 @@ namespace WindowsFormsApp1
             this.Payment = Payment;
             this.Pet = Pet;
             this.Bike = Bike;
-            this.Railrunner = Railrunner;
+            this.Railrunner = Railrunner;            
+        }
 
-            makeTicket();
-            float price = calculatePrice(StartStation, EndStation, WayType, Discount, ClassType, Payment, Pet, Bike, Railrunner);
-            finishPayment(price, Payment);
+        public Ticket makeTicket()
+        {
+            Ticket ticket = new Ticket(StartStation, EndStation, WayType, Discount, ClassType, Payment, Pet, Bike, Railrunner);
+            return ticket;
+        }
+
+        public void calcPrice(Ticket ticket)
+        {
+            Pricing pricing = new Pricing();
+            float price = pricing.calculatePrice(ticket);
         }
     }
 }

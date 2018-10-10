@@ -17,6 +17,8 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             Order order = new Order(StartStaiton,EndStation,WayType,Discount,ClassType,Payment,Pet,Bike,Railrunner);
+            Ticket ticket = order.makeTicket();
+            order.calcPrice(ticket);
         }
 
         public string StartStaiton

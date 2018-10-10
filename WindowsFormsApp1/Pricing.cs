@@ -9,13 +9,13 @@ namespace WindowsFormsApp1
 {
     class Pricing
     {
-        public float calculatePrice(string StartStation, string EndStation, string WayType, string Discount, string ClassType, string Payment, bool Pet, bool Bike, bool Railrunner) {
+        public float calculatePrice(Ticket ticket) {
             float price = 0;
-            price += calculateRoutePrice(StartStation, EndStation, WayType);
-            price += calculateAddonPrice(Pet, Bike, Railrunner);
-            price += calculateClassPrice(ClassType);
-            price += calculatePaymentPrice(Payment);
-            price = calculateDiscount(price, Discount);
+            price += calculateRoutePrice(ticket.StartStation, ticket.EndStation, ticket.WayType);
+            price += calculateAddonPrice(ticket.Pet, ticket.Bike, ticket.Railrunner);
+            price += calculateClassPrice(ticket.ClassType);
+            price += calculatePaymentPrice(ticket.Payment);
+            price = calculateDiscount(price, ticket.Discount);
             return price;
         }
 
