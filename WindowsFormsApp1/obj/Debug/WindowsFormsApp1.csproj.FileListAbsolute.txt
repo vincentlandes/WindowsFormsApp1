@@ -8,3 +8,10 @@ D:\University\MSO\TicketMachine\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wind
 D:\University\MSO\TicketMachine\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 D:\University\MSO\TicketMachine\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\University\MSO\TicketMachine\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojResolveAssemblyReference.cache
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UI.resources
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.Cache
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Tijmen\Desktop\Stack\Informatica\Jaar 2\Modelleren en Systeemontwerp\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

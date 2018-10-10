@@ -7,7 +7,7 @@ using static WindowsFormsApp1.UI;
 
 namespace WindowsFormsApp1
 {
-    class Order
+    public class Order
     {
         string StartStation;
         string EndStation; 

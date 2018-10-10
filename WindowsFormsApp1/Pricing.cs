@@ -7,7 +7,7 @@ using static WindowsFormsApp1.UI;
 
 namespace WindowsFormsApp1
 {
-    class Pricing
+    public class Pricing
     {
         public float calculatePrice(Ticket ticket) {
             float price = 0;
