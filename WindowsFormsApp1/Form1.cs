@@ -8,17 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-namespace WindowsFormsApp1
+namespace TicketMachine
 {
     public partial class UI : Form
     {
         public UI()
         {
-            InitializeComponent();
-            Order order = new Order(StartStaiton,EndStation,WayType,Discount,ClassType,Payment,Pet,Bike,Railrunner);
-            Ticket ticket = order.makeTicket();
-            order.calcPrice(ticket);
+            InitializeComponent();            
         }
 
         public string StartStaiton
@@ -81,7 +77,10 @@ namespace WindowsFormsApp1
 
         private void startTransaction_Click(object sender, EventArgs e) 
         {
-
+            Order order = new Order(StartStaiton,EndStation,WayType,Discount,ClassType,Payment,Pet,Bike,Railrunner);
+            Ticket ticket = order.makeTicket();
+            float ticketprice = order.calcPrice(ticket);
+            Paying.finishPayment(ticketprice, ticket);
         }
     }
 }

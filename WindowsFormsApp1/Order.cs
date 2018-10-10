@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static WindowsFormsApp1.UI;
+using static TicketMachine.UI;
 
-namespace WindowsFormsApp1
+namespace TicketMachine
 {
     public class Order
     {
@@ -38,10 +38,11 @@ namespace WindowsFormsApp1
             return ticket;
         }
 
-        public void calcPrice(Ticket ticket)
+        public float calcPrice(Ticket ticket)
         {
             Pricing pricing = new Pricing();
             float price = pricing.calculatePrice(ticket);
+            return price;
         }
     }
 }

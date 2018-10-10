@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace TicketMachine
 {
     partial class UI
     {
@@ -82,7 +82,8 @@
             this.payMethod.FormattingEnabled = true;
             this.payMethod.Items.AddRange(new object[] {
             "Contant",
-            "Credit Card"});
+            "Credit Card",
+            "Debit Card"});
             this.payMethod.Location = new System.Drawing.Point(226, 204);
             this.payMethod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.payMethod.Name = "payMethod";

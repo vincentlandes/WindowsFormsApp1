@@ -1,6 +1,6 @@
-namespace WindowsFormsApp1
+namespace TicketMachine
 {
-    class Ticket
+    public class Ticket
     {
         public string StartStation;
         public string EndStation; 

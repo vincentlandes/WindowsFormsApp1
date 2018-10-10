@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static WindowsFormsApp1.UI;
+using static TicketMachine.UI;
 
-namespace WindowsFormsApp1
+namespace TicketMachine
 {
     public class Pricing
     {
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1
         private float calculateClassPrice(string ClassType)
         {
             float classPrice = 0;
-            if (ClassType == "FirstClass") {
+            if (ClassType == "1e klasse") {
                 classPrice += 5.50f;
                 return classPrice;
             } 
@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
         private float calculatePaymentPrice(string Payment) 
         {
             float paymentPrice = 0;
-            if (Payment == "CreditCard") {
+            if (Payment == "Credit Card") {
                 paymentPrice += 0.50f;
             }
             return paymentPrice;
@@ -65,9 +65,9 @@ namespace WindowsFormsApp1
 
         private float calculateDiscount(float price, string Discount)
         {            
-            if (Discount == "DiscountFourty") {
+            if (Discount == "40%") {
                 return price *= 0.6f;
-            } else if (Discount == "DiscountTwenty") {
+            } else if (Discount == "20%") {
                 return price *= 0.8f;
             } else {
                 return price;
