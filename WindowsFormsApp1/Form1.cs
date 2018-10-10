@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 
 namespace WindowsFormsApp1
@@ -15,42 +16,43 @@ namespace WindowsFormsApp1
         public UI()
         {
             InitializeComponent();
+            Order order = new Order(StartStaiton,EndStation,WayType,Discount,ClassType,Payment,Pet,Bike,Railrunner);
         }
 
-        public string StartStaion
+        public string StartStaiton
         {
             get {return startStation.SelectedValue.ToString();}
         }
 
         public string EndStation
         {
-            get { return startStation.SelectedValue.ToString(); }
+            get { return startStation.SelectedValue.ToString();}
         }
 
         public string WayType 
         {
-            get { return wayType.SelectedValue.ToString(); }
+            get { return wayType.SelectedValue.ToString();}
         }
 
         public string Discount
         {
-            get { return discountType.SelectedValue.ToString(); }
+            get { return discountType.SelectedValue.ToString();}
         }
 
         public string ClassType
         {
-            get { return classType.SelectedValue.ToString(); }
+            get { return classType.SelectedValue.ToString();}
         }
 
         public string Payment 
         {
-            get { return payMethod.SelectedValue.ToString(); }
+            get { return payMethod.SelectedValue.ToString();}
         }
 
         public bool Pet
         {
-            get 
-            { if (pet.Checked)
+            get { 
+                if (pet.Checked)
                     return true;                   
                 return false; 
             }
@@ -58,8 +60,7 @@ namespace WindowsFormsApp1
 
         public bool Bike
         {
-            get
-            {
+            get {
                 if (bike.Checked)
                     return true;
                 return false;
@@ -69,8 +70,8 @@ namespace WindowsFormsApp1
 
         public bool Railrunner
         {
-           get
-            { if (railRunner.Checked) 
+           get { 
+                if (railRunner.Checked) 
                     return true;                                  
                 return false; 
             }
